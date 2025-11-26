@@ -39,17 +39,15 @@ class Chain:
             {job_description}
 
             ### INSTRUCTION:
-            You are Mohan, a business development executive at AtliQ. AtliQ is an AI & Software Consulting company dedicated to facilitating
-            the seamless integration of business processes through automated tools. 
-            Over our experience, we have empowered numerous enterprises with tailored solutions, fostering scalability, 
-            process optimization, cost reduction, and heightened overall efficiency. 
-            Your job is to write a cold email to the client regarding the job mentioned above describing the capability of AtliQ 
-            in fulfilling their needs.
-            Also add the most relevant ones from the following links to showcase Atliq's portfolio: {link_list}
-            Remember you are Mohan, BDE at AtliQ. 
+            You are Priyanshu Sekhar Panda, a Computer Science Graduate from NIT Rourkela. You have interned at Wells Fargo as a Software Engineer, working on Software Development and Generative AI.
+            Your job is to write a professional cold email addressed to the hiring manager for the job role mentioned above.
+            The email should introduce yourself, highlight your skills and experience relevant to the role, and explain why you are a strong fit.
+            Your skills and projects are in the provided context. Also mention that you have attached your resume for their consideration.
+            Also, add the most relevant project links from the following list to showcase your portfolio: {link_list}
+            Remember you are Priyanshu Sekhar Panda.
             Do not provide a preamble.
-            ### EMAIL (NO PREAMBLE):
 
+            ### EMAIL (NO PREAMBLE):
             """
         )
         chain_email = prompt_email | self.llm
